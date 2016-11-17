@@ -311,7 +311,7 @@ for k=1:numel(subjects)
             end
         end
         
-        set(gca, 'Ytick',[]); xlim([-3 numel(de_novo_muts)+1]); ylim([-.15*(numel(SampleNames)) numel(SampleNames)+1])
+        set(gca, 'Ytick',[]); xlim([-3 numel(de_novo_muts)+2]); ylim([-.15*(numel(SampleNames)) numel(SampleNames)+1])
         saveas(h,[masterdir '/summary_graphics/P' num2str(k) 'summary.jpg'],'jpg');close(h)
         
         
